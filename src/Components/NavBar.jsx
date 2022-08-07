@@ -25,7 +25,7 @@ function NavBar() {
     color: "primary.main",
     "&:hover": {
       transition: "0.08s",
-      boxShadow: `0px 3px 2px ${isDark == "dark" ? yellow[700] : blue[700]}`,
+      boxShadow: `0px 3px 2px ${isDark === "dark" ? yellow[700] : blue[700]}`,
     },
   };
   const navbarContainer = {
