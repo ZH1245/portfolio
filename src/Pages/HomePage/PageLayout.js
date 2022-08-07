@@ -329,7 +329,7 @@ function HomePage(props) {
                   <Typography className="text" color="text.primary" pt={2}>
                     <a
                       rel="noreferrer"
-                      href=""
+                      href="https://iamzainharoon.netlify.app"
                       style={{
                         textDecoration: "none",
                         color: isDark === "dark" ? yellow[700] : blue[700],
