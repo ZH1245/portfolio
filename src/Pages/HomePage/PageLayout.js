@@ -325,6 +325,7 @@ function HomePage(props) {
                   Built By Own Portfolio using MUI and ReactJS
                   <Typography className="text" color="text.primary" pt={2}>
                     <a
+                      rel="noreferrer"
                       href=""
                       style={{
                         textDecoration: "none",
@@ -348,7 +349,9 @@ function HomePage(props) {
                   Resume Builder in NextJS and MUI to create Resume's
                   <Typography className="text" color="text.primary" pt={2}>
                     <a
-                      href=""
+                      href="https://resume-builder-2.vercel.app"
+                      target="_blank"
+                      rel="noreferrer"
                       style={{
                         textDecoration: "none",
                         color: isDark == "dark" ? yellow[700] : blue[700],
@@ -371,6 +374,7 @@ function HomePage(props) {
                   A platform for Tourist's and Tour Operators in MERN stack.
                   <Typography className="text" color="text.primary" pt={2}>
                     <a
+                      rel="noreferrer"
                       target="_blank"
                       href="https://tour-book.netlify.app"
                       style={{
