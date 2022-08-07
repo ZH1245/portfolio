@@ -311,10 +311,11 @@ function HomePage(props) {
             display={"flex"}
             justifyContent="space-between"
             spacing={2}
-            direction={{ md: "row", sm: "column", xs: "column" }}
+            direction={"column"}
+            // direction={{ md: "row", sm: "column", xs: "column" }}
             alignItems="center"
           >
-            <Card sx={{ maxWidth: 345 }} className="text">
+            <Card sx={{ maxWidth: 400 }} className="text">
               <CardHeader title="Portfolio" />
               <CardContent>
                 <Typography
@@ -338,7 +339,7 @@ function HomePage(props) {
                 </Typography>
               </CardContent>
             </Card>
-            <Card sx={{ maxWidth: 345 }} className="text">
+            <Card sx={{ maxWidth: 400 }} className="text">
               <CardHeader title="Resume Builder" />
               <CardContent>
                 <Typography
@@ -363,7 +364,7 @@ function HomePage(props) {
                 </Typography>
               </CardContent>
             </Card>
-            <Card sx={{ maxWidth: 345 }} className="text">
+            <Card sx={{ maxWidth: 400 }} className="text">
               <CardHeader title="TourBook" />
               <CardContent>
                 <Typography
@@ -388,7 +389,7 @@ function HomePage(props) {
                 </Typography>
               </CardContent>
             </Card>
-            <Card sx={{ maxWidth: 345 }} className="text">
+            <Card sx={{ maxWidth: 400 }} className="text">
               <CardHeader title="Face Mask Detector" />
               <CardContent sx={{ pt: 0, pb: 0 }}>
                 <Typography
