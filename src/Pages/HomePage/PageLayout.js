@@ -332,7 +332,7 @@ function HomePage(props) {
                       href=""
                       style={{
                         textDecoration: "none",
-                        color: isDark == "dark" ? yellow[700] : blue[700],
+                        color: isDark === "dark" ? yellow[700] : blue[700],
                       }}
                     >
                       Go to Website
@@ -357,7 +357,7 @@ function HomePage(props) {
                       rel="noreferrer"
                       style={{
                         textDecoration: "none",
-                        color: isDark == "dark" ? yellow[700] : blue[700],
+                        color: isDark === "dark" ? yellow[700] : blue[700],
                       }}
                     >
                       Go to Website
@@ -382,7 +382,7 @@ function HomePage(props) {
                       href="https://tour-book.netlify.app"
                       style={{
                         textDecoration: "none",
-                        color: isDark == "dark" ? yellow[700] : blue[700],
+                        color: isDark === "dark" ? yellow[700] : blue[700],
                       }}
                     >
                       Go to Website
