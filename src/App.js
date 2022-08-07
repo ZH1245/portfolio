@@ -1,7 +1,7 @@
-import { Box, CssBaseline } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import { blue, yellow } from "@mui/material/colors";
 
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import {
   responsiveFontSizes,
   createTheme,
@@ -9,7 +9,6 @@ import {
 } from "@mui/material/styles";
 import NavBar from "./Components/NavBar";
 import PageLayout from "./Pages/HomePage/PageLayout";
-import { Container } from "@mui/system";
 
 const lightTheme = responsiveFontSizes(
   createTheme({
@@ -67,7 +66,7 @@ const darkTheme = responsiveFontSizes(
 function App(props) {
   const theme = useSelector((state) => state.theme.value);
   return (
-    <ThemeProvider theme={theme == "dark" ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <CssBaseline />
       <NavBar />
       <PageLayout />

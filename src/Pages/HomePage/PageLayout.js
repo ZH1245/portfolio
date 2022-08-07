@@ -1,18 +1,16 @@
-import PropTypes from "prop-types";
 import {
   AiFillGithub,
   AiFillFacebook,
   AiFillMail,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { Link } from "react-scroll";
+
 import { useSelector } from "react-redux";
 import {
   Button,
   Card,
   CardContent,
   CardHeader,
-  Divider,
   Fade,
   Grid,
   LinearProgress,
@@ -25,7 +23,7 @@ import React from "react";
 import "./index.css";
 import lightwave from "./lightwave.svg";
 import darkwave from "./darkwave.svg";
-import NavBar from "../../Components/NavBar";
+
 function HomePage(props) {
   const isDark = useSelector((state) => state.theme.value);
   const text = {
@@ -33,7 +31,7 @@ function HomePage(props) {
   };
   const svgAsBackground = {
     backgroundImage:
-      isDark == "dark" ? `url(${darkwave})` : `url(${lightwave})`,
+      isDark === "dark" ? `url(${darkwave})` : `url(${lightwave})`,
     backgroundRepeat: "no-repeat",
   };
   const leftIntro = {
@@ -88,6 +86,7 @@ function HomePage(props) {
                   direction={{ md: "row", sm: "column", xs: "column" }}
                 >
                   <a
+                    rel="noreferrer"
                     target={"_blank"}
                     href="https://github.com/ZH1245"
                     style={{ textDecoration: "none" }}
@@ -101,6 +100,7 @@ function HomePage(props) {
                     </Button>
                   </a>
                   <a
+                    rel="noreferrer"
                     target={"_blank"}
                     href="https://facebook.com/zain.haroon.786"
                     style={{ textDecoration: "none" }}
@@ -114,6 +114,7 @@ function HomePage(props) {
                     </Button>
                   </a>
                   <a
+                    rel="noreferrer"
                     target={"_blank"}
                     href="https://www.linkedin.com/in/zain-haroon-593b65124/"
                     style={{ textDecoration: "none" }}
@@ -127,6 +128,7 @@ function HomePage(props) {
                     </Button>
                   </a>
                   <a
+                    rel="noreferrer"
                     target={"_blank"}
                     href="mailto:zainharoon890@gmail.com"
                     style={{ textDecoration: "none" }}
@@ -183,7 +185,7 @@ function HomePage(props) {
             {"I am a Fresh Graduate from "}
             <span
               style={{
-                color: isDark == "dark" ? yellow[700] : blue[700],
+                color: isDark === "dark" ? yellow[700] : blue[700],
                 fontWeight: "bold",
               }}
             >
@@ -192,7 +194,7 @@ function HomePage(props) {
             {" Completed my Bachelors in"}{" "}
             <span
               style={{
-                color: isDark == "dark" ? yellow[700] : blue[700],
+                color: isDark === "dark" ? yellow[700] : blue[700],
                 fontWeight: "bold",
               }}
             >
@@ -201,7 +203,7 @@ function HomePage(props) {
             {" with "}
             <span
               style={{
-                color: isDark == "dark" ? yellow[700] : blue[700],
+                color: isDark === "dark" ? yellow[700] : blue[700],
                 fontWeight: "bold",
               }}
             >

@@ -1,18 +1,15 @@
-import PropTypes from "prop-types";
 import {
   Toolbar,
   AppBar,
   Button,
   Switch,
   Typography,
-  Menu,
-  MenuItem,
   IconButton,
   Stack,
   Fade,
 } from "@mui/material";
 import { Link } from "react-scroll";
-import React, { useState } from "react";
+import React from "react";
 import { Container, Box } from "@mui/system";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../reducers/darkMode";
@@ -48,15 +45,15 @@ function NavBar() {
   };
   const [anchorElNav, setAnchorElNav] = React.useState(false);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
   const toggleMenu = () => {
     setAnchorElNav(!anchorElNav);
   };
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
   return (
     <AppBar elevation={false}>
@@ -212,7 +209,7 @@ function NavBar() {
                 <Switch
                   value={isDark}
                   onClick={() => dispatch(toggleDarkMode())}
-                  defaultChecked={isDark == "dark" ? true : false}
+                  defaultChecked={isDark === "dark" ? true : false}
                 />
               </Button>
             </Stack>
@@ -282,7 +279,7 @@ function NavBar() {
                       <Switch
                         value={isDark}
                         onClick={() => dispatch(toggleDarkMode())}
-                        defaultChecked={isDark == "dark" ? true : false}
+                        defaultChecked={isDark === "dark" ? true : false}
                       />
                     </Button>
                   </Container>
