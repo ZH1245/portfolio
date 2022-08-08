@@ -22,6 +22,19 @@ const lightTheme = responsiveFontSizes(
       },
     },
     components: {
+      MuiButton: {
+        defaultProps: {
+          variant: "primary",
+        },
+        styleOverrides: {
+          root: {
+            color: blue[700],
+            "&:hover": {
+              boxShadow: `0px 2px 2px ${blue[700]}`,
+            },
+          },
+        },
+      },
       MuiAppBar: {
         styleOverrides: {
           root: {
@@ -30,7 +43,6 @@ const lightTheme = responsiveFontSizes(
         },
         defaultProps: {
           position: "sticky",
-
           color: "secondary",
         },
       },
@@ -49,10 +61,23 @@ const darkTheme = responsiveFontSizes(
       },
     },
     components: {
+      MuiButton: {
+        defaultProps: {
+          variant: "primary",
+        },
+        styleOverrides: {
+          root: {
+            color: yellow[700],
+            "&:hover": {
+              boxShadow: `0px 2px 2px ${yellow[700]}`,
+            },
+          },
+        },
+      },
       MuiAppBar: {
         styleOverrides: {
           root: {
-            m: 19,
+            // m: 19,
             "&:hover": { boxShadow: `0px 4px 7px ${yellow[700]}` },
           },
         },

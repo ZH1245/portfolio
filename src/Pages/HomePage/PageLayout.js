@@ -1,3 +1,4 @@
+import Resume from "./ZH_Resume.pdf";
 import {
   AiFillGithub,
   AiFillFacebook,
@@ -44,7 +45,6 @@ function HomePage(props) {
   };
   return (
     <Box sx={text} className={"text"}>
-      {/* <NavBar /> */}
       <Grid container sx={svgAsBackground}>
         <Grid item sm={12} xs={12} md={6} sx={{ p: { md: 4, sm: 0, xs: 0 } }}>
           <Stack spacing={1} sx={leftIntro} direction="column">
@@ -82,7 +82,10 @@ function HomePage(props) {
             <Container sx={{ pt: 3 }}>
               <Fade in={true} timeout={2000}>
                 <Stack
-                  spacing={2}
+                  sx={{
+                    width: "fit-content",
+                  }}
+                  spacing={1}
                   direction={{ md: "row", sm: "column", xs: "column" }}
                 >
                   <a
@@ -455,46 +458,44 @@ function HomePage(props) {
             Resume
           </u>
         </Typography>
-        <Container sx={{ textAlign: "justify" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          rerum eum reprehenderit saepe aliquid, numquam vitae at excepturi fuga
-          dolor dolorem beatae nostrum, odio a blanditiis voluptas harum quis.
+        <Container
+          sx={{
+            textAlign: "justify",
+            alignItems: "center",
+          }}
+        >
+          <Stack spacing={1} direction="column" alignItems="center">
+            <Card
+              sx={{
+                maxWidth: 400,
+                p: 5,
+                pl: 8,
+                pr: 8,
+                textAlign: "center",
+              }}
+              className="text"
+            >
+              <CardHeader title="Zain Haroon's Resume" />
+              <CardContent sx={{ pt: 0, pb: 0 }}>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={Resume}
+                >
+                  <Button
+                    variant="primary"
+                    sx={{ textAlign: "left" }}
+                    className="text"
+                  >
+                    Download Resume
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+          </Stack>
         </Container>
       </Container>
     </Box>

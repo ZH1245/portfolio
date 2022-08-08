@@ -14,7 +14,7 @@ import { Container, Box } from "@mui/system";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../reducers/darkMode";
 import MenuIcon from "@mui/icons-material/Menu";
-import { blue, grey, red, yellow } from "@mui/material/colors";
+import { blue, red, yellow } from "@mui/material/colors";
 
 import "./navbar.css";
 
