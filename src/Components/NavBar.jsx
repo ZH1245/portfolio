@@ -14,7 +14,7 @@ import { Container, Box } from "@mui/system";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../reducers/darkMode";
 import MenuIcon from "@mui/icons-material/Menu";
-import { blue, yellow } from "@mui/material/colors";
+import { blue, grey, red, yellow } from "@mui/material/colors";
 
 import "./navbar.css";
 
@@ -207,6 +207,20 @@ function NavBar() {
               >
                 Dark mode
                 <Switch
+                  sx={{
+                    "& .MuiSwitch-switchBase": {
+                      // padding: 2,
+                      "&.Mui-checked": {
+                        // transform: "translateX(12px)",
+                        color: isDark === "dark" ? yellow[700] : blue[700],
+                        "& + .MuiSwitch-track": {
+                          opacity: 1,
+                          backgroundColor:
+                            isDark === "dark" ? red[500] : "#1890ff",
+                        },
+                      },
+                    },
+                  }}
                   value={isDark}
                   onClick={() => dispatch(toggleDarkMode())}
                   defaultChecked={isDark === "dark" ? true : false}
@@ -277,6 +291,21 @@ function NavBar() {
                     >
                       Dark mode
                       <Switch
+                        sx={{
+                          "& .MuiSwitch-switchBase": {
+                            // padding: 2,
+                            "&.Mui-checked": {
+                              // transform: "translateX(12px)",
+                              color:
+                                isDark === "dark" ? yellow[700] : blue[700],
+                              "& + .MuiSwitch-track": {
+                                opacity: 1,
+                                backgroundColor:
+                                  isDark === "dark" ? red[500] : "#1890ff",
+                              },
+                            },
+                          },
+                        }}
                         value={isDark}
                         onClick={() => dispatch(toggleDarkMode())}
                         defaultChecked={isDark === "dark" ? true : false}
