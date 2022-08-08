@@ -29,6 +29,8 @@ const lightTheme = responsiveFontSizes(
           },
         },
         defaultProps: {
+          position: "sticky",
+
           color: "secondary",
         },
       },
