@@ -22,6 +22,15 @@ const lightTheme = responsiveFontSizes(
       },
     },
     components: {
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            "&:hover": {
+              boxShadow: `2px 2px 5px 5px ${blue[700]}`,
+            },
+          },
+        },
+      },
       MuiButton: {
         defaultProps: {
           variant: "primary",
@@ -61,6 +70,15 @@ const darkTheme = responsiveFontSizes(
       },
     },
     components: {
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            "&:hover": {
+              boxShadow: `2px 2px 5px 5px ${yellow[700]}`,
+            },
+          },
+        },
+      },
       MuiButton: {
         defaultProps: {
           variant: "primary",
