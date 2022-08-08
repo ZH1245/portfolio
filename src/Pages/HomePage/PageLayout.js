@@ -317,7 +317,10 @@ function HomePage(props) {
             // direction={{ md: "row", sm: "column", xs: "column" }}
             alignItems="center"
           >
-            <Card sx={{ maxWidth: 400 }} className="text">
+            <Card
+              sx={{ maxWidth: 400, pt: 2, pb: 2, pl: 1, pr: 1 }}
+              className="text"
+            >
               <CardHeader title="Portfolio" />
               <CardContent>
                 <Typography
@@ -329,6 +332,7 @@ function HomePage(props) {
                   <Typography className="text" color="text.primary" pt={2}>
                     <a
                       rel="noreferrer"
+                      target="_blank"
                       href="https://iamzainharoon.netlify.app"
                       style={{
                         textDecoration: "none",
@@ -341,7 +345,10 @@ function HomePage(props) {
                 </Typography>
               </CardContent>
             </Card>
-            <Card sx={{ maxWidth: 400 }} className="text">
+            <Card
+              sx={{ maxWidth: 400, pt: 2, pb: 2, pl: 1, pr: 1 }}
+              className="text"
+            >
               <CardHeader title="Resume Builder" />
               <CardContent>
                 <Typography
@@ -366,7 +373,10 @@ function HomePage(props) {
                 </Typography>
               </CardContent>
             </Card>
-            <Card sx={{ maxWidth: 400 }} className="text">
+            <Card
+              sx={{ maxWidth: 400, pt: 2, pb: 2, pl: 1, pr: 1 }}
+              className="text"
+            >
               <CardHeader title="TourBook" />
               <CardContent>
                 <Typography
@@ -391,7 +401,10 @@ function HomePage(props) {
                 </Typography>
               </CardContent>
             </Card>
-            <Card sx={{ maxWidth: 400 }} className="text">
+            <Card
+              sx={{ maxWidth: 400, pt: 2, pb: 2, pl: 1, pr: 1 }}
+              className="text"
+            >
               <CardHeader title="Face Mask Detector" />
               <CardContent sx={{ pt: 0, pb: 0 }}>
                 <Typography
