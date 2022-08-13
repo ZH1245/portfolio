@@ -12,7 +12,6 @@ import {
   Card,
   CardContent,
   CardHeader,
-  Fade,
   Grid,
   LinearProgress,
   Stack,
@@ -47,107 +46,112 @@ function HomePage(props) {
     <Box sx={text} className={"text"}>
       <Grid container sx={svgAsBackground}>
         <Grid item sm={12} xs={12} md={6} sx={{ p: { md: 4, sm: 0, xs: 0 } }}>
-          <Stack spacing={1} sx={leftIntro} direction="column">
+          <Stack
+            spacing={1}
+            sx={leftIntro}
+            direction="column"
+            className="animated"
+          >
             <Container>
               <Typography variant="h3" className="text">
                 {"Hello, My Name is"}
-                <Fade timeout={800} in={true}>
+                {/* <Fade timeout={800} in={true}> */}
+                <Typography
+                  variant="h1"
+                  className={"headings"}
+                  sx={{
+                    color: "text.primary",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {"Zain."}
+                </Typography>
+                {/* </Fade> */}
+                {/* <Fade in={true} timeout={2000}> */}
+                <Typography className="text" sx={{ fontSize: "4vh" }}>
+                  {"I am a"}
                   <Typography
-                    variant="h1"
-                    className={"headings"}
                     sx={{
+                      fontSize: "3vh",
                       color: "text.primary",
                       fontWeight: "bold",
                     }}
                   >
-                    {"Zain."}
+                    {"Programmer, Web Developer, Mobile App Developer"}
                   </Typography>
-                </Fade>
-                <Fade in={true} timeout={2000}>
-                  <Typography className="text" sx={{ fontSize: "4vh" }}>
-                    {"I am a"}
-                    <Typography
-                      sx={{
-                        fontSize: "3vh",
-                        color: "text.primary",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {"Programmer, Web Developer, Mobile App Developer"}
-                    </Typography>
-                  </Typography>
-                </Fade>
+                </Typography>
+                {/* </Fade> */}
               </Typography>
             </Container>
             <Container sx={{ pt: 3 }}>
-              <Fade in={true} timeout={2000}>
-                <Stack
-                  sx={{
-                    width: "fit-content",
-                  }}
-                  spacing={1}
-                  direction={{ md: "row", sm: "column", xs: "column" }}
+              {/* <Fade in={true} timeout={2000}> */}
+              <Stack
+                sx={{
+                  width: "fit-content",
+                }}
+                spacing={1}
+                direction={{ md: "row", sm: "column", xs: "column" }}
+              >
+                <a
+                  rel="noreferrer"
+                  target={"_blank"}
+                  href="https://github.com/ZH1245"
+                  style={{ textDecoration: "none" }}
                 >
-                  <a
-                    rel="noreferrer"
-                    target={"_blank"}
-                    href="https://github.com/ZH1245"
-                    style={{ textDecoration: "none" }}
+                  <Button
+                    color="primary"
+                    startIcon={<AiFillGithub />}
+                    sx={{ alignItems: "center" }}
                   >
-                    <Button
-                      color="primary"
-                      startIcon={<AiFillGithub />}
-                      sx={{ alignItems: "center" }}
-                    >
-                      <Typography className="text"> GitHub</Typography>
-                    </Button>
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target={"_blank"}
-                    href="https://facebook.com/zain.haroon.786"
-                    style={{ textDecoration: "none" }}
+                    <Typography className="text"> GitHub</Typography>
+                  </Button>
+                </a>
+                <a
+                  rel="noreferrer"
+                  target={"_blank"}
+                  href="https://facebook.com/zain.haroon.786"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button
+                    color="primary"
+                    startIcon={<AiFillFacebook />}
+                    sx={{ alignItems: "center" }}
                   >
-                    <Button
-                      color="primary"
-                      startIcon={<AiFillFacebook />}
-                      sx={{ alignItems: "center" }}
-                    >
-                      <Typography className="text"> FaceBook</Typography>
-                    </Button>
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target={"_blank"}
-                    href="https://www.linkedin.com/in/zain-haroon-593b65124/"
-                    style={{ textDecoration: "none" }}
+                    <Typography className="text"> FaceBook</Typography>
+                  </Button>
+                </a>
+                <a
+                  rel="noreferrer"
+                  target={"_blank"}
+                  href="https://www.linkedin.com/in/zain-haroon-593b65124/"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button
+                    color="primary"
+                    startIcon={<AiFillLinkedin />}
+                    sx={{ alignItems: "center" }}
                   >
-                    <Button
-                      color="primary"
-                      startIcon={<AiFillLinkedin />}
-                      sx={{ alignItems: "center" }}
-                    >
-                      <Typography className="text"> LinkedIn</Typography>
-                    </Button>
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target={"_blank"}
-                    href="mailto:zainharoon890@gmail.com"
-                    style={{ textDecoration: "none" }}
+                    <Typography className="text"> LinkedIn</Typography>
+                  </Button>
+                </a>
+                <a
+                  rel="noreferrer"
+                  target={"_blank"}
+                  href="mailto:zainharoon890@gmail.com"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button
+                    color="primary"
+                    startIcon={<AiFillMail />}
+                    sx={{ alignItems: "center" }}
                   >
-                    <Button
-                      color="primary"
-                      startIcon={<AiFillMail />}
-                      sx={{ alignItems: "center" }}
-                    >
-                      <Typography className="text">
-                        zainharoon890@gmail.com
-                      </Typography>
-                    </Button>
-                  </a>
-                </Stack>
-              </Fade>
+                    <Typography className="text">
+                      zainharoon890@gmail.com
+                    </Typography>
+                  </Button>
+                </a>
+              </Stack>
+              {/* </Fade> */}
             </Container>
           </Stack>
         </Grid>
@@ -162,7 +166,12 @@ function HomePage(props) {
         }}
       /> */}
 
-      <Container maxWidth="xl" id="about" sx={{ mb: 2 }}>
+      <Container
+        maxWidth="xl"
+        id="about"
+        sx={{ mb: 2 }}
+        className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
+      >
         <Typography
           variant="h6"
           color="text.primary"
@@ -225,7 +234,12 @@ function HomePage(props) {
           border: `1px solid ${isDark == "dark" ? yellow[700] : blue[700]}`,
         }}
       /> */}
-      <Container maxWidth="xl" id="skills" sx={{ mb: 2, mt: 2 }}>
+      <Container
+        maxWidth="xl"
+        id="skills"
+        sx={{ mb: 2, mt: 2 }}
+        className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
+      >
         <Typography
           variant="h6"
           color="text.primary"
@@ -289,7 +303,12 @@ function HomePage(props) {
           border: `1px solid ${isDark == "dark" ? yellow[700] : blue[700]}`,
         }}
       /> */}
-      <Container maxWidth="xl" id="projects">
+      <Container
+        maxWidth="xl"
+        id="projects"
+        className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
+        sx={{ pb: 2, pt: 2 }}
+      >
         <Typography
           variant="h6"
           color="text.primary"
@@ -437,7 +456,12 @@ function HomePage(props) {
           border: `1px solid ${isDark == "dark" ? yellow[700] : blue[700]}`,
         }}
       /> */}
-      <Container maxWidth="xl" id="resume" sx={{ pb: 2, pt: 2 }}>
+      <Container
+        maxWidth="xl"
+        id="resume"
+        sx={{ pb: 2, pt: 2 }}
+        className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
+      >
         <Typography
           variant="h6"
           color="text.primary"
@@ -490,7 +514,7 @@ function HomePage(props) {
                     sx={{ textAlign: "left" }}
                     className="text"
                   >
-                    Download Resume
+                    <Typography>Download Resume</Typography>
                   </Button>
                 </a>
               </CardContent>

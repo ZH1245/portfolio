@@ -5,3 +5,56 @@
 .headings {
   font-family: "Dancing Script", cursive !important;
 }
+
+@keyframes myanimation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(100px);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated {
+  transition: 0.3s;
+  /* opacity: 0; */
+  animation: myanimation 1.5s alternate;
+}
+.animated:hover {
+  transform: translateX(5rem);
+}
+.onhoverDark {
+  margin-top: 16px;
+  /* padding-top: 6px; */
+  transition: 0.4s;
+}
+.onhoverDark:hover {
+  transition: 0.4s;
+  transform: translateY(-3rem);
+  border: 2px solid #fbc02d;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* margin-bottom: 6px; */
+}
+.onhoverLight {
+  margin-top: 16px;
+  transition: 0.4s;
+}
+.onhoverLight:hover {
+  transition: 0.4s;
+  transform: translateY(-3rem);
+  border: 2px solid #1976d2;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
