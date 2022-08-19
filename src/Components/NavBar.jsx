@@ -179,7 +179,7 @@ function NavBar() {
                   Skills
                 </Button>
               </Link>
-              <Link to="skills" spy={true} smooth={true} offset={-100}>
+              <Link to="projects" spy={true} smooth={true} offset={-100}>
                 <Button sx={buttonStyles} color="primary">
                   Projects
                 </Button>
