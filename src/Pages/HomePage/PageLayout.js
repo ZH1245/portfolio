@@ -514,7 +514,7 @@ function HomePage(props) {
                     sx={{ textAlign: "left" }}
                     className="text"
                   >
-                    <Typography>Download Resume</Typography>
+                    <Typography variant="caption">Download Resume</Typography>
                   </Button>
                 </a>
               </CardContent>
