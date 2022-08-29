@@ -273,7 +273,7 @@ function HomePage(props) {
             </Typography>
             <Typography className="text" color="text.primary">
               HTML
-              <LinearProgressWithLabel value={75} variant="determinate" />
+              <LinearProgressWithLabel value={80} variant="determinate" />
             </Typography>
             <Typography className="text" color="text.primary">
               JavaScript
@@ -361,7 +361,7 @@ function HomePage(props) {
                         color: isDark === "dark" ? yellow[700] : blue[700],
                       }}
                     >
-                      Go to Website
+                      This Website
                     </a>
                   </Typography>
                 </Typography>
@@ -491,6 +491,7 @@ function HomePage(props) {
           <Stack spacing={1} direction="column" alignItems="center">
             <Card
               sx={{
+                minWidth: 200,
                 maxWidth: 400,
                 p: 5,
                 pl: 8,
@@ -511,10 +512,10 @@ function HomePage(props) {
                 >
                   <Button
                     variant="primary"
-                    sx={{ textAlign: "left" }}
+                    sx={{ textAlign: "center" }}
                     className="text"
                   >
-                    <Typography variant="caption">Download Resume</Typography>
+                    <Typography variant="button">Download Resume</Typography>
                   </Button>
                 </a>
               </CardContent>

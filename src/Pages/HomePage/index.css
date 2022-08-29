@@ -50,11 +50,12 @@
   transition: 0.4s;
 }
 .onhoverLight:hover {
+  /* margin-right: 10px; */
   transition: 0.4s;
   transform: translateY(-3rem);
   border: 2px solid #1976d2;
   border-radius: 10px;
   margin-top: 50px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
