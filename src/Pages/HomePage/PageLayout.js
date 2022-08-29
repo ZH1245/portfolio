@@ -265,19 +265,19 @@ function HomePage(props) {
           <Stack spacing={2}>
             <Typography className="text" color="text.primary">
               ReactJS
-              <LinearProgressWithLabel value={70} variant="determinate" />
+              <LinearProgressWithLabel value={80} variant="determinate" />
             </Typography>
             <Typography className="text" color="text.primary">
               MERN
-              <LinearProgressWithLabel value={70} variant="determinate" />
+              <LinearProgressWithLabel value={80} variant="determinate" />
             </Typography>
             <Typography className="text" color="text.primary">
               HTML
-              <LinearProgressWithLabel value={70} variant="determinate" />
+              <LinearProgressWithLabel value={75} variant="determinate" />
             </Typography>
             <Typography className="text" color="text.primary">
               JavaScript
-              <LinearProgressWithLabel value={65} variant="determinate" />
+              <LinearProgressWithLabel value={70} variant="determinate" />
             </Typography>
             <Typography className="text" color="text.primary">
               Data Structures
@@ -285,11 +285,11 @@ function HomePage(props) {
             </Typography>
             <Typography className="text" color="text.primary">
               OOP
-              <LinearProgressWithLabel value={63} variant="determinate" />
+              <LinearProgressWithLabel value={60} variant="determinate" />
             </Typography>
             <Typography className="text" color="text.primary">
               React Native
-              <LinearProgressWithLabel value={55} variant="determinate" />
+              <LinearProgressWithLabel value={60} variant="determinate" />
             </Typography>
           </Stack>
         </Container>
