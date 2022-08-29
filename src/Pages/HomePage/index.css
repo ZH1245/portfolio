@@ -27,9 +27,9 @@
   /* opacity: 0; */
   animation: myanimation 1.5s alternate;
 }
-.animated:hover {
+/* .animated:hover {
   transform: translateX(5rem);
-}
+} */
 .onhoverDark {
   margin-top: 16px;
   /* padding-top: 6px; */
