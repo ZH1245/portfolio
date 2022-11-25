@@ -167,9 +167,9 @@ function HomePage(props) {
       /> */}
 
       <Container
-        maxWidth="xl"
+        // maxWidth="md"
         id="about"
-        sx={{ mb: 2 }}
+        sx={{ mb: 2, mx: 5 }}
         className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
       >
         <Typography
@@ -235,9 +235,9 @@ function HomePage(props) {
         }}
       /> */}
       <Container
-        maxWidth="xl"
+        // maxWidth="xl"
         id="skills"
-        sx={{ mb: 2, mt: 2 }}
+        sx={{ my: 2, mx: 5 }}
         className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
       >
         <Typography
@@ -304,10 +304,10 @@ function HomePage(props) {
         }}
       /> */}
       <Container
-        maxWidth="xl"
+        // maxWidth="md"
         id="projects"
         className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
-        sx={{ pb: 2, pt: 2 }}
+        sx={{ py: 2, mx: 5 }}
       >
         <Typography
           variant="h6"
@@ -457,9 +457,9 @@ function HomePage(props) {
         }}
       /> */}
       <Container
-        maxWidth="xl"
+        // maxWidth="xl"
         id="resume"
-        sx={{ pb: 2, pt: 2 }}
+        sx={{ my: 2, mx: 5 }}
         className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
       >
         <Typography
