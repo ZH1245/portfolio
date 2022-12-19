@@ -308,7 +308,7 @@ function HomePage(props) {
         // maxWidth="md"
         id="projects"
         className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
-        sx={{ py: 2, mx: 5 }}
+        sx={{ py: 2, mx: 5, px: 2 }}
       >
         <Typography
           variant="h6"
@@ -460,7 +460,7 @@ function HomePage(props) {
       <Box
         // maxWidth="xl"
         id="resume"
-        sx={{ my: 2, mx: 5 }}
+        sx={{ my: 2, mx: 5, px: 2 }}
         className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
       >
         <Typography
