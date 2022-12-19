@@ -166,8 +166,8 @@ function HomePage(props) {
         }}
       /> */}
 
-      <Container
-        // maxWidth="md"
+      <Box
+        // maxWidth="lg"
         id="about"
         sx={{ mb: 2, mx: 5 }}
         className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
@@ -181,6 +181,7 @@ function HomePage(props) {
             alignItems: "center",
             textAlign: { sm: "center", md: "left", xs: "center" },
             pb: { md: "auto", sm: 1, xs: 1 },
+            px: 2,
           }}
         >
           <u
@@ -224,7 +225,7 @@ function HomePage(props) {
             {" I'm a quick learner and always motivated about learning!"}
           </Typography>
         </Container>
-      </Container>
+      </Box>
       {/* <Divider
         orientation="horizontal"
         flexItem
@@ -234,10 +235,10 @@ function HomePage(props) {
           border: `1px solid ${isDark == "dark" ? yellow[700] : blue[700]}`,
         }}
       /> */}
-      <Container
+      <Box
         // maxWidth="xl"
         id="skills"
-        sx={{ my: 2, mx: 5 }}
+        sx={{ my: 2, mx: 5, px: 2 }}
         className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
       >
         <Typography
@@ -293,7 +294,7 @@ function HomePage(props) {
             </Typography>
           </Stack>
         </Container>
-      </Container>
+      </Box>
       {/* <Divider
         orientation="horizontal"
         flexItem
@@ -303,7 +304,7 @@ function HomePage(props) {
           border: `1px solid ${isDark == "dark" ? yellow[700] : blue[700]}`,
         }}
       /> */}
-      <Container
+      <Box
         // maxWidth="md"
         id="projects"
         className={isDark === "dark" ? "onhoverDark" : "onhoverLight"}
@@ -446,7 +447,7 @@ function HomePage(props) {
             </Card>
           </Stack>
         </Container>
-      </Container>
+      </Box>
       {/* <Divider
         orientation="horizontal"
         flexItem
@@ -456,7 +457,7 @@ function HomePage(props) {
           border: `1px solid ${isDark == "dark" ? yellow[700] : blue[700]}`,
         }}
       /> */}
-      <Container
+      <Box
         // maxWidth="xl"
         id="resume"
         sx={{ my: 2, mx: 5 }}
@@ -522,7 +523,7 @@ function HomePage(props) {
             </Card>
           </Stack>
         </Container>
-      </Container>
+      </Box>
     </Box>
   );
 }
